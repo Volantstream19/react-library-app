@@ -1,6 +1,7 @@
 import BookList from './components/book/BookList';
 import './App.css';
 import { Link, Route, Switch } from 'react-router-dom';
+import BookDetail from './components/book/BookDetail';
 
 function App() {
   // TODO: Add routes to books & views
@@ -13,6 +14,10 @@ function App() {
             Home
           </Link>
           <BookList />
+        </Route>
+
+        <Route path="/BookDetail">
+          <BookDetail />
         </Route>
 
         <Route path="/">
